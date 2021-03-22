@@ -1,0 +1,66 @@
+:root{
+    --main-color:#fafcef;
+    --navbackground-color:#232528;
+
+}
+@keyframes bganim {
+    from {background-position: left;}
+    to {background-position: right;}
+  }
+body{
+    background-color: var(--main-color)!important;
+    background-image: url(../images/Picture1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+input{
+  background-color: transparent!important;
+}
+select{
+  background-color: transparent!important;
+}
+.navbackground{
+    background-color: #282b70!important;
+    
+}
+.buttoncheck{
+    background-color: #282b70!important;
+    border-color: transparent!important;
+    background: linear-gradient(to right, rgb(26, 23, 151) 20%, #175597 40% ,  rgb(26, 23, 151) 60%, #175597 80%);
+    background-size: 200%;
+    animation: bganim 1s alternate infinite;
+}
+.gridsystem{
+    display: grid!important;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.typewriter h1 {
+    color: #212121;
+    /* font-family: monospace; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #212121; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:#212121 }
+  }
